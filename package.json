@@ -1,0 +1,19 @@
+{
+  "name": "zion-mobile-phones",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix zion-mobile-phones run dev",
+    "build": "npm --prefix zion-mobile-phones run build",
+    "preview": "npm --prefix zion-mobile-phones run preview"
+  },
+  "dependencies": {
+    "firebase": "^13.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "vite": "^6.4.5"
+  }
+}

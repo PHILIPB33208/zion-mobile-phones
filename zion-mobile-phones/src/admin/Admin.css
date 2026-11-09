@@ -1,0 +1,170 @@
+.admin-login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #101827;
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-box h1 {
+  color: #d49a16;
+  font-size: 35px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 13px;
+  margin: 12px 0;
+  box-sizing: border-box;
+}
+
+.login-box button,
+.admin-header button {
+  background: #d49a16;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-box button {
+  width: 100%;
+}
+
+.login-box a {
+  display: block;
+  margin-top: 20px;
+  color: #333;
+}
+
+.admin-page {
+  min-height: 100vh;
+  background: #f3f5f8;
+  font-family: Arial, sans-serif;
+}
+
+.admin-header {
+  background: #101827;
+  color: white;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.admin-stats div {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+.admin-stats h3 {
+  font-size: 30px;
+  color: #d49a16;
+}
+
+.admin-form-section,
+.admin-products {
+  background: white;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 10px;
+}
+
+.product-form {
+  display: grid;
+  gap: 15px;
+}
+
+.product-form input:not([type="checkbox"]):not([type="file"]),
+.product-form select,
+.product-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product-form textarea {
+  min-height: 90px;
+}
+
+.product-form button {
+  background: #101827;
+  color: white;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.image-label {
+  display: grid;
+  gap: 10px;
+}
+
+.manage-product {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.manage-product img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.manage-product div {
+  flex: 1;
+}
+
+.manage-product button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.admin-error {
+  color: #c62828;
+}
+
+@media (max-width: 650px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-header {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
